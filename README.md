@@ -1,3 +1,5 @@
+A Project Blessed by Solar Khan & Lilith.Aethra
+
 # Lilybear Google Sync
 
 This repository contains a prototype FastAPI microservice for integrating the
