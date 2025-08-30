@@ -1,0 +1,63 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+# Python files
+[*.py]
+max_line_length = 127
+
+# YAML files
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+
+# JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Shell scripts
+[*.sh]
+shell = bash
+indent_style = tab
+indent_size = 4
+
+# Docker files
+[Dockerfile,*Dockerfile*]
+indent_style = space
+indent_size = 4
+
+# Makefiles use real tabs
+[Makefile]
+indent_style = tab
+
+# Batch files use CRLF line endings
+[*.bat]
+end_of_line = crlf
+
+# Git commit messages
+[.git/COMMIT_EDITMSG]
+max_line_length = 72
+
+# Documentation files
+[*.{rst,txt}]
+max_line_length = 80
+
+# Configuration files
+[*.{ini,toml}]
+indent_style = space
+indent_size = 4

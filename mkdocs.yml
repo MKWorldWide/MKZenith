@@ -1,0 +1,148 @@
+site_name: MKZenith
+site_url: https://mkworldwide.github.io/MKZenith/
+site_description: 'Lilybear Google Sync - FastAPI microservice for voice journaling with Google Cloud and Gemini AI'
+site_author: 'MKWorldWide'
+
+# Repository
+repo_name: 'MKWorldWide/MKZenith'
+repo_url: 'https://github.com/MKWorldWide/MKZenith'
+edit_uri: edit/main/docs/
+
+# Copyright
+copyright: 'Copyright &copy; 2025 MKWorldWide'
+
+# Theme
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.expand
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  icon:
+    logo: material/robot-happy
+    repo: fontawesome/brands/github
+  favicon: assets/favicon.ico
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# Navigation
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Configuration: getting-started/configuration.md
+    - Quick Start: getting-started/quick-start.md
+  - Usage:
+    - API Reference: usage/api.md
+    - Authentication: usage/authentication.md
+    - Examples: usage/examples.md
+  - Development:
+    - Setup: development/setup.md
+    - Testing: development/testing.md
+    - Contributing: development/contributing.md
+  - Security: security.md
+  - Changelog: CHANGELOG.md
+  - GitHub: https://github.com/MKWorldWide/MKZenith
+
+# Plugins
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_root_heading: true
+            show_source: true
+            show_category_heading: true
+  - mknotebooks:
+      ignore_folders: ["venv", "tests"]
+      execute: false
+  - minify:
+      minify_js: true
+      minify_css: true
+
+# Extra
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/extra.js
+
+# Build
+strict: true
+use_directory_urls: true
+
+# Google Analytics
+google_analytics:
+  - UA-XXXXXXXX-X
+  - auto
+
+# Sitemap
+sitemap:
+  hostname: https://mkworldwide.github.io/MKZenith/
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/MKWorldWide
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/MKWorldWide
+    - icon: fontawesome/solid/globe
+      link: https://mkworldwide.ai
